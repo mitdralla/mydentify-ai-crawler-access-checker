@@ -4,6 +4,10 @@ A dependency-free Node.js command-line tool for checking how a public page treat
 
 The checker reads `robots.txt`, evaluates the submitted path for six named crawlers, inspects page-level indexing directives, and sends a labeled request with each user-agent string. It keeps search discovery, user-requested retrieval, and model-training crawlers separate because they serve different jobs.
 
+## Try the browser evaluator
+
+Use the [browser-local robots policy evaluator](https://mitdralla.github.io/mydentify-ai-crawler-access-checker/) to paste a `robots.txt` file and test one path without sending that policy anywhere. The browser demo performs rule evaluation only; use the hosted checker when you also need live page, header, redirect, and user-agent response checks.
+
 ## Run the check
 
 Node.js 20 or newer is required. No package install or API key is needed.

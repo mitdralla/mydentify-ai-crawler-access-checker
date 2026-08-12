@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Evaluate one robots.txt policy against documented OpenAI and Anthropic crawler names in your browser.">
+    <link rel="canonical" href="https://mitdralla.github.io/mydentify-ai-crawler-access-checker/">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Mydentify AI Crawler Access Checker</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <p class="eyebrow">Open-source browser tool</p>
+        <h1>Mydentify AI Crawler Access Checker</h1>
+        <p>Paste a robots.txt policy and test one path against documented OpenAI and Anthropic crawler names. Everything on this page runs in your browser.</p>
+      </header>
+
+      <form id="policy-form">
+        <label>
+          <span>Path to test</span>
+          <input id="path" name="path" value="/product" required>
+        </label>
+        <label>
+          <span>robots.txt policy</span>
+          <textarea id="robots" name="robots" rows="12" required>User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /</textarea>
+        </label>
+        <button type="submit">Evaluate crawler access</button>
+      </form>
+
+      <section aria-live="polite">
+        <div class="section-heading">
+          <p class="eyebrow">Policy result</p>
+          <h2 id="result-title">Run the evaluator</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Crawler</th>
+                <th>Purpose</th>
+                <th>Access</th>
+                <th>Matched rule</th>
+              </tr>
+            </thead>
+            <tbody id="results"></tbody>
+          </table>
+        </div>
+        <p class="note">This demo evaluates pasted rules only. It does not fetch a site or prove how an official crawler IP will behave.</p>
+      </section>
+
+      <footer>
+        <a href="https://mydentify.com/tools/ai-crawler-access-checker">Run the full Mydentify crawler access check</a>
+        <a href="https://github.com/mitdralla/mydentify-ai-crawler-access-checker">View the MIT-licensed source</a>
+      </footer>
+    </main>
+    <script type="module" src="./src/web.js"></script>
+  </body>
+</html>
