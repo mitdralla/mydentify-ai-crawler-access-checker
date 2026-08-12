@@ -1,0 +1,31 @@
+{
+  "title": "Mydentify AI Crawler Access Checker",
+  "description": "A dependency-free command-line and browser tool for checking robots.txt rules, page indexing directives, response headers, and user-agent responses for six documented OpenAI and Anthropic crawler identities.",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Allard, Timothy"
+    }
+  ],
+  "keywords": [
+    "AI crawler",
+    "robots.txt",
+    "search engine optimization",
+    "generative engine optimization",
+    "GPTBot",
+    "ClaudeBot"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://mydentify.com/tools/ai-crawler-access-checker",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/mitdralla/mydentify-ai-crawler-access-checker",
+      "relation": "isIdenticalTo",
+      "resource_type": "software"
+    }
+  ]
+}

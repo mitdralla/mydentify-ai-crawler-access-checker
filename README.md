@@ -1,5 +1,7 @@
 # Mydentify AI Crawler Access Checker
 
+[![CITATION.cff](https://img.shields.io/badge/cite-CITATION.cff-2f80ed.svg)](CITATION.cff)
+
 A dependency-free Node.js command-line tool for checking how a public page treats documented OpenAI and Anthropic crawler names.
 
 The checker reads `robots.txt`, evaluates the submitted path for six named crawlers, inspects page-level indexing directives, and sends a labeled request with each user-agent string. It keeps search discovery, user-requested retrieval, and model-training crawlers separate because they serve different jobs.

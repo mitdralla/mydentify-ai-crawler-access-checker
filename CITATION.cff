@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: Mydentify AI Crawler Access Checker
+type: software
+authors:
+  - family-names: Allard
+    given-names: Timothy
+    alias: mitdralla
+version: 1.1.1
+date-released: 2026-08-12
+url: https://mydentify.com/tools/ai-crawler-access-checker
+repository-code: https://github.com/mitdralla/mydentify-ai-crawler-access-checker
+license: MIT
+keywords:
+  - AI crawler
+  - robots.txt
+  - search engine optimization
+  - generative engine optimization
+  - GPTBot
+  - ClaudeBot
+abstract: >-
+  A dependency-free command-line and browser tool for checking robots.txt
+  rules, page indexing directives, response headers, and user-agent responses
+  for six documented OpenAI and Anthropic crawler identities.
