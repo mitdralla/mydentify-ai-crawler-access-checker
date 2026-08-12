@@ -47,6 +47,17 @@ async function probe(url, userAgent) {
   }
 }
 
+/**
+ * Check how a public HTTP or HTTPS page treats documented OpenAI and Anthropic
+ * crawler user-agent names.
+ *
+ * The response includes robots.txt decisions, page indexing directives, and
+ * labeled response probes. Probes originate from the caller and do not prove
+ * access from a provider-owned IP range.
+ *
+ * @param {string} input Public page URL or hostname to check.
+ * @returns {Promise<object>} Structured crawler-access report.
+ */
 export async function checkAiCrawlerAccess(input) {
   const requestedUrl = normalizeUrl(input);
   const { response, body } = await request(requestedUrl, { readBody: true });

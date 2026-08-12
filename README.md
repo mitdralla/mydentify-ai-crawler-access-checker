@@ -14,16 +14,20 @@ Use the [browser-local robots policy evaluator](https://mitdralla.github.io/myde
 
 Node.js 20 or newer is required. No package install or API key is needed.
 
-Run the published CLI with:
-
-```sh
-npx mydentify-ai-crawler-access-checker https://example.com/product
-```
-
-Or run the source checkout directly:
+Run the source checkout directly:
 
 ```sh
 node src/cli.js https://example.com/product
+```
+
+## Use as a library
+
+The typed library entry point is published on JSR:
+
+```js
+import { checkAiCrawlerAccess } from "jsr:@mydentify/ai-crawler-check";
+
+const report = await checkAiCrawlerAccess("https://example.com/product");
 ```
 
 Return the complete machine-readable result with:
