@@ -14,6 +14,14 @@ Use the [browser-local robots policy evaluator](https://mitdralla.github.io/myde
 
 Node.js 20 or newer is required. No package install or API key is needed.
 
+Run the published CLI with:
+
+```sh
+npx mydentify-ai-crawler-access-checker https://example.com/product
+```
+
+Or run the source checkout directly:
+
 ```sh
 node src/cli.js https://example.com/product
 ```
