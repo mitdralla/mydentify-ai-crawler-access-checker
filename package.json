@@ -1,0 +1,31 @@
+{
+  "name": "mydentify-ai-crawler-access-checker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A dependency-free CLI for checking AI crawler access rules and page responses.",
+  "type": "module",
+  "bin": {
+    "mydentify-ai-crawler-check": "./src/cli.js"
+  },
+  "scripts": {
+    "check": "node src/cli.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "homepage": "https://mydentify.com/tools/ai-crawler-access-checker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitdralla/mydentify-ai-crawler-access-checker.git"
+  },
+  "keywords": [
+    "ai-crawler",
+    "robots-txt",
+    "gptbot",
+    "claudebot",
+    "seo",
+    "geo"
+  ]
+}
